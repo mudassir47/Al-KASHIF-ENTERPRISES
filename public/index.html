@@ -40,7 +40,7 @@
     <!--    Stylesheets-->
     <!-- ===============================================-->
     <link href="assets/css/theme.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
 
@@ -83,7 +83,7 @@
                 <nav>
                   <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i class="fas fa-plane"></i></i></button>
-                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <i class="fas fa-map-marker-alt"></i></i></button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <i class="fa-brands fa-cc-visa"></i>
                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false"> <i class="fas fa-hotel"></i></button>
                   </div>
                   <div class="tab-content" id="nav-tabContent">
@@ -129,78 +129,134 @@
                         </div>
                         <div class="col-sm-6 col-md-6 col-xl-5">
                           <div class="input-group-icon">
-                            <label class="form-label visually-hidden" for="inputAddress1">Address 1</label>
-                            <input class="form-control input-box form-voyage-control" id="aironumber" type="text" placeholder="Enter Phone Number" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-number"></i></span>
+                            <label class="form-label visually-hidden" for="inputAddress1">Phone Number</label>
+                            <input class="form-control input-box form-voyage-control" id="aironumber" type="text" placeholder="Enter Phone Number" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-phone"></i>
                           </div>
                         </div>
                         <div class="col-12 col-xl-10 col-lg-12 d-grid mt-6">
-                          <button id="mksubmit" class="btn btn-secondary" type="submit">Search Packages</button>
+                          <button id="mksubmit" class="btn btn-secondary" type="submit">Submit Aeroplane Detail</button>
                         </div>
                       </form>
                     </div>
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                      <form id="mydata" class="row g-4 mt-5">
+                     
+                     
+                     
+                     
+                      <form id="passdata" class="row g-4 mt-5">
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <label class="form-label visually-hidden" for="inputAddressThree">Address 1</label>
-                            <input class="form-control input-box form-voyage-control" id="inputAddressThree" type="text" placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <label class="form-label visually-hidden" for="inputAddressThree">Full Name</label>
+                            <input class="form-control input-box form-voyage-control" id="fullname" type="text" placeholder="Full Name" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-user"></i></span>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <label class="form-label visually-hidden" for="inputAddressFour">Address 2</label>
-                            <input class="form-control input-box form-voyage-control" id="inputAddressFour" type="text" placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
+                            <label class="form-label visually-hidden" for="inputAddressFour">Email Adress</label>
+                            <input class="form-control input-box form-voyage-control" id="emailadress" type="email" placeholder="Email Adress" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-envelope"></i></span>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <input class="form-control input-box form-voyage-control" id="inputDateThree" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            <label class="form-label visually-hidden" for="inputAddressFour">number</label>
+                            <input class="form-control input-box form-voyage-control" id="number" type="number" placeholder="Phone Number" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-phone-volume"></i></span>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <input class="form-control input-box form-voyage-control" id="inputDateFour" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            <label class="form-label visually-hidden" for="inputAddressFour">Full Adress</label>
+                            <input class="form-control input-box form-voyage-control" id="fulladress" type="text" placeholder="Full Adress" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <label class="form-label visually-hidden" for="inputPeopleTwo">People</label>
-                            <select class="form-select form-voyage-select input-box" id="inputPeopleTwo">
-                              <option selected="selected">2 Adults</option>
-                              <option>2 Adults 1 children</option>
-                              <option>2 Adults 2 children</option>
-                            </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span>
+                            <label class="form-label visually-hidden" for="inputAddressFour">State</label>
+                            <input class="form-control input-box form-voyage-control" id="state" type="text" placeholder="Enter State name" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
                           </div>
                         </div>
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddressFour">City</label>
+                            <input class="form-control input-box form-voyage-control" id="city" type="text" placeholder="Enter city name" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddressFour">Passport Number</label>
+                            <input class="form-control input-box form-voyage-control" id="passportnumber" type="text" placeholder="Enter Passport Number" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-passport"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddressFour">Pancard Number</label>
+                            <input class="form-control input-box form-voyage-control" id="pancardnumber" type="text" placeholder="Enter Pancard Number" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-id-card"></i></span>
+                          </div>
+                        </div>
+                        
                         <div class="col-12 d-grid mt-6">
-                          <button class="btn btn-secondary" type="submit">Search Packages</button>
+                          <button class="btn btn-secondary" id="submit" type="submit">Submit Visa Detail</button>
                         </div>
                       </form>
+
+
+
+
+
                     </div>
                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                      <form class="row g-4 mt-5">
+                      <form id="mkhotel" class="row g-4 mt-5">
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <input class="form-control input-box form-voyage-control" id="inputDateFive" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            <label for="">Check in Date</label>
+                            <input class="form-control input-box form-voyage-control" id="checkindate" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <input class="form-control input-box form-voyage-control" id="inputDateSix" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
+                            <label for="">Check Out Date</label>
+                            <input class="form-control input-box form-voyage-control" id="checkoutdate" type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-calendar"></i></span>
                           </div>
                         </div>
                         <div class="col-6">
                           <div class="input-group-icon">
-                            <label class="form-label visually-hidden" for="inputPeopleThree">Person</label>
-                            <select class="form-select form-voyage-select input-box" id="inputPeopleThree">
-                              <option selected="selected">2 Adults</option>
-                              <option>2 Adults 1 children</option>
-                              <option>2 Adults 2 children</option>
+                            <label class="form-label visually-hidden" for="inputPeopleThree">Guest</label>
+                            <select class="form-select form-voyage-select input-box" id="guest">
+                              <option selected="selected">1 Guests</option>
+                              <option>1 Guests </option>
+                              <option>2 Guests</option>
+                              <option>3 Guests</option>
+                              <option>4 Guests</option>
+                              <option>6 Guests</option>
+                              <option>8 Guests</option>
+                              <option>10 Guests</option>
+                              <option>12 Guests</option>
+                              <option>14 Guests</option>
+                              
                             </select><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-user"> </i></span>
                           </div>
                         </div>
+                        
+
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddressFour">city</label>
+                            <input class="form-control input-box form-voyage-control" id="mkcity" type="text" placeholder="Enter city name" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fas fa-map-marker-alt"> </i></span>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddressFour">Number of Room</label>
+                            <input class="form-control input-box form-voyage-control" id="numberofroom" type="number" placeholder="Enter Number of Room" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-house-user"></i></span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-xl-5">
+                          <div class="input-group-icon">
+                            <label class="form-label visually-hidden" for="inputAddress1">Phone Number</label>
+                            <input class="form-control input-box form-voyage-control" id="mkknumber" type="number" placeholder="Enter Phone Number" /><span class="nav-link-icon text-800 fs--1 input-box-icon"><i class="fa-solid fa-phone"></i>
+                          </div>
+                        </div>
                         <div class="col-12 d-grid mt-6">
-                          <button class="btn btn-secondary" type="submit">Search Packages</button>
+                          <button class="btn btn-secondary" id="done" type="submit">Submit Hotel Booking Detail</button>
                         </div>
                       </form>
                     </div>
@@ -330,7 +386,9 @@
 
         <div class="container">
           <div class="row g-0">
-            <div class="col-lg-4 order-1"><img class="w-100 mt-5 mt-lg-0" src="assets/img/m.png" height="800px" style="border-radius: 20px; margin-left:20px ;" alt="..." /></div>
+            <div class="col-lg-4 order-1">
+              <img class="w-100 mt-5 mt-lg-0" src="assets/img/m.png" style="max-height: 800px; border-radius: 20px; margin-left: 20px; object-fit: contain;" alt="..." />
+          </div>
             <div class="col-lg-8">
               <div class="carousel slide" id="carouselActivity" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -686,7 +744,7 @@ mkaero.addEventListener("submit", (e) => {
         date: inputdateOne,
         uid: "web",
         key: uniqueKey, // Add the unique key to the data
-        dates: inputPersonOne,
+        guest: inputPersonOne,
         number: aironumber,
     })
         .then(() => {
@@ -705,8 +763,104 @@ mkaero.addEventListener("submit", (e) => {
     document.getElementById("aironumber").value = "";
 });
  
+
+
+
+// const app = initializeApp(firebaseConfig);
+    // const database = getDatabase(app);
+            const passdata = document.getElementById("passdata");
+
+passdata.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const fullname = document.getElementById("fullname").value;
+   
+    const emailadress = document.getElementById("emailadress").value;
+    const number = document.getElementById("number").value;
+    const fulladress = document.getElementById("fulladress").value;
+    const state = document.getElementById("state").value;
+    const city = document.getElementById("city").value;
+    const passportnumber = document.getElementById("passportnumber").value;
+    const pancardnumber = document.getElementById("pancardnumber").value;
+    const textRef = ref(database, "viza");
+    const newTextRef = push(textRef);
+    const uniqueKey = newTextRef.key; 
+    set(newTextRef, {
+        fullname: fullname,
+       
+        emailadress: emailadress,
+        number: number,
+        fulladress: fulladress,
+        key:uniqueKey,
+        state: state,
+        uid:"web",
+        city: city,
+        passportnumber: passportnumber,
+        pancardnumber: pancardnumber,
+    })
+        .then(() => {
+            console.log("Text data uploaded successfully!");
+        })
+        .catch((error) => {
+            console.error("Error uploading text data: ", error);
+        });
+
+    // Clear the input fields after submission
+    document.getElementById("fullname").value = "";
+   
+    document.getElementById("emailadress").value = "";
+    document.getElementById("number").value = "";
+    document.getElementById("fulladress").value = "";
+    document.getElementById("state").value = "";
+    document.getElementById("city").value = "";
+    document.getElementById("passportnumber").value = "";
+    document.getElementById("pancardnumber").value = "";
+});
+
+
+            const mkhotel = document.getElementById("mkhotel");
+
+mkhotel.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const checkindate = document.getElementById("checkindate").value;
+    const checkoutdate = document.getElementById("checkoutdate").value;
+    const guest = document.getElementById("guest").value;
+    const city = document.getElementById("mkcity").value;
+    const numberofroom = document.getElementById("numberofroom").value; 
+    const mnumber = document.getElementById("mkknumber").value;
+    const textRef = ref(database, "hotel");
+    const newTextRef = push(textRef);
+    const uniqueKey = newTextRef.key; 
+    set(newTextRef, {
+        checkindate: checkindate,
+        checkoutdate: checkoutdate,
+        guest: guest,
+        number:mnumber,
+        uid:"web",
+        key:uniqueKey,
+        city: city,
+        numberofroom: numberofroom,
+       
+    })
+        .then(() => {
+            console.log("Text data uploaded successfully!");
+        })
+        .catch((error) => {
+            console.error("Error uploading text data: ", error);
+        });
+
+    // Clear the input fields after submission
+    document.getElementById("checkindate").value = "";
+    document.getElementById("checkoutdate").value = "";
+    document.getElementById("guest").value = "";
+    document.getElementById("mkcity").value = "";
+    document.getElementById("numberofroom").value = "";
+    document.getElementById("mkknumber").value = "";
+});
+
   
     </script>
+
+
 
 
 
